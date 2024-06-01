@@ -160,6 +160,24 @@ dex_import {
 }
 
 prebuilt_etc_xml {
+	name: "android.hardware.contexthub-service.qmi",
+	owner: "xiaomi",
+	src: "proprietary/vendor/etc/vintf/android.hardware.contexthub-service.qmi.xml",
+	filename_from_src: true,
+	sub_dir: "vintf",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "android.hardware.authsecret-service.nxp",
+	owner: "xiaomi",
+	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.authsecret-service.nxp.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
 	name: "android.hardware.gnss-aidl-service-qti",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.gnss-aidl-service-qti.xml",
@@ -262,6 +280,33 @@ prebuilt_etc_xml {
 	name: "android.hardware.security.keymint-service-qti",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.security.keymint-service-qti.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "android.hardware.security.keymint3-service.strongbox-nxp",
+	owner: "xiaomi",
+	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.security.keymint3-service.strongbox-nxp.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "android.hardware.security.sharedsecret3-service.strongbox-nxp",
+	owner: "xiaomi",
+	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.security.sharedsecret3-service.strongbox-nxp.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "android.hardware.thermal-service.qti",
+	owner: "xiaomi",
+	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.thermal-service.qti.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,

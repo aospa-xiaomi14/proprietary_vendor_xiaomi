@@ -824,6 +824,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/xiaomi14/proprietary/odm/etc/dolby/dax-default-spatializer.xml:$(TARGET_COPY_OUT_ODM)/etc/dolby/dax-default-spatializer.xml \
     vendor/xiaomi/xiaomi14/proprietary/odm/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_ODM)/etc/dolby/dax-default.xml \
     vendor/xiaomi/xiaomi14/proprietary/odm/etc/init.panel_info.sh:$(TARGET_COPY_OUT_ODM)/etc/init.panel_info.sh \
+    vendor/xiaomi/xiaomi14/proprietary/vendor/etc/init/android.hardware.contexthub-service.qmi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.contexthub-service.qmi.rc \
     vendor/xiaomi/xiaomi14/proprietary/odm/etc/init/vendor.xiaomi.hardware.aidl.tidaservice-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hardware.aidl.tidaservice-service.rc \
     vendor/xiaomi/xiaomi14/proprietary/odm/etc/init/vendor.xiaomi.hardware.dtool1.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hardware.dtool1.rc \
     vendor/xiaomi/xiaomi14/proprietary/odm/etc/init/vendor.xiaomi.hardware.mfidoca-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hardware.mfidoca-service.rc \
@@ -1212,7 +1213,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/xiaomi14/proprietary/system_ext/lib64/vendor.xiaomi.hardware.fingerprintextension-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.xiaomi.hardware.fingerprintextension-V1-ndk.so \
     vendor/xiaomi/xiaomi14/proprietary/system_ext/lib64/vendor.xiaomi.hardware.fingerprintextension@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.xiaomi.hardware.fingerprintextension@1.0.so \
     vendor/xiaomi/xiaomi14/proprietary/vendor/bin/ATFWD-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ATFWD-daemon \
+    vendor/xiaomi/xiaomi14/proprietary/vendor/bin/KmInstallKeybox:$(TARGET_COPY_OUT_VENDOR)/bin/KmInstallKeybox \
     vendor/xiaomi/xiaomi14/proprietary/vendor/bin/SoterProvisioningTool:$(TARGET_COPY_OUT_VENDOR)/bin/SoterProvisioningTool \
+    vendor/xiaomi/xiaomi14/proprietary/vendor/bin/StoreKeybox:$(TARGET_COPY_OUT_VENDOR)/bin/StoreKeybox \
     vendor/xiaomi/xiaomi14/proprietary/vendor/bin/TrustedUISampleTest:$(TARGET_COPY_OUT_VENDOR)/bin/TrustedUISampleTest \
     vendor/xiaomi/xiaomi14/proprietary/vendor/bin/adpl:$(TARGET_COPY_OUT_VENDOR)/bin/adpl \
     vendor/xiaomi/xiaomi14/proprietary/vendor/bin/adsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/adsprpcd \
@@ -1234,13 +1237,17 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/xiaomi14/proprietary/vendor/bin/edgnss-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/edgnss-daemon \
     vendor/xiaomi/xiaomi14/proprietary/vendor/bin/embmsslServer:$(TARGET_COPY_OUT_VENDOR)/bin/embmsslServer \
     vendor/xiaomi/xiaomi14/proprietary/vendor/bin/engine-service:$(TARGET_COPY_OUT_VENDOR)/bin/engine-service \
+    vendor/xiaomi/xiaomi14/proprietary/vendor/bin/hw/android.hardware.authsecret-service.nxp:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.authsecret-service.nxp \
     vendor/xiaomi/xiaomi14/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.1-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@1.1-service-qti \
+    vendor/xiaomi/xiaomi14/proprietary/vendor/bin/hw/android.hardware.contexthub-service.qmi:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.contexthub-service.qmi \
     vendor/xiaomi/xiaomi14/proprietary/vendor/bin/hw/android.hardware.gatekeeper-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gatekeeper-service-qti \
     vendor/xiaomi/xiaomi14/proprietary/vendor/bin/hw/android.hardware.gnss-aidl-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gnss-aidl-service-qti \
     vendor/xiaomi/xiaomi14/proprietary/vendor/bin/hw/android.hardware.ir-service.example:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.ir-service.example \
     vendor/xiaomi/xiaomi14/proprietary/vendor/bin/hw/android.hardware.nqnfc-service.nxp:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.nqnfc-service.nxp \
     vendor/xiaomi/xiaomi14/proprietary/vendor/bin/hw/android.hardware.secure_element-service.qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.secure_element-service.qti \
     vendor/xiaomi/xiaomi14/proprietary/vendor/bin/hw/android.hardware.security.keymint-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.security.keymint-service-qti \
+    vendor/xiaomi/xiaomi14/proprietary/vendor/bin/hw/android.hardware.security.keymint-service.strongbox-nxp:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.security.keymint-service.strongbox-nxp \
+    vendor/xiaomi/xiaomi14/proprietary/vendor/bin/hw/android.hardware.thermal-service.qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.thermal-service.qti \
     vendor/xiaomi/xiaomi14/proprietary/vendor/bin/hw/qconfigservice:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qconfigservice \
     vendor/xiaomi/xiaomi14/proprietary/vendor/bin/hw/qcrilNrd:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qcrilNrd \
     vendor/xiaomi/xiaomi14/proprietary/vendor/bin/hw/sxrservice:$(TARGET_COPY_OUT_VENDOR)/bin/hw/sxrservice \
@@ -1313,6 +1320,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/xiaomi14/proprietary/vendor/bin/ssr_setup:$(TARGET_COPY_OUT_VENDOR)/bin/ssr_setup \
     vendor/xiaomi/xiaomi14/proprietary/vendor/bin/subsystem_ramdump:$(TARGET_COPY_OUT_VENDOR)/bin/subsystem_ramdump \
     vendor/xiaomi/xiaomi14/proprietary/vendor/bin/tftp_server:$(TARGET_COPY_OUT_VENDOR)/bin/tftp_server \
+    vendor/xiaomi/xiaomi14/proprietary/vendor/bin/thermal-engine-v2:$(TARGET_COPY_OUT_VENDOR)/bin/thermal-engine-v2 \
     vendor/xiaomi/xiaomi14/proprietary/vendor/bin/time_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/time_daemon \
     vendor/xiaomi/xiaomi14/proprietary/vendor/bin/vendor.dpmd:$(TARGET_COPY_OUT_VENDOR)/bin/vendor.dpmd \
     vendor/xiaomi/xiaomi14/proprietary/vendor/bin/vendor.qti.hardware.soter-provision:$(TARGET_COPY_OUT_VENDOR)/bin/vendor.qti.hardware.soter-provision \
@@ -1458,6 +1466,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/xiaomi14/proprietary/vendor/etc/camera/model_indoor.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/camera/model_indoor.dlc \
     vendor/xiaomi/xiaomi14/proprietary/vendor/etc/charger_diag.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/charger_diag.cfg \
     vendor/xiaomi/xiaomi14/proprietary/vendor/etc/charger_fw_fstab.qti:$(TARGET_COPY_OUT_VENDOR)/etc/charger_fw_fstab.qti \
+    vendor/xiaomi/xiaomi14/proprietary/vendor/etc/chre/preloaded_nanoapps.json:$(TARGET_COPY_OUT_VENDOR)/etc/chre/preloaded_nanoapps.json \
     vendor/xiaomi/xiaomi14/proprietary/vendor/etc/cne/mwqem.conf:$(TARGET_COPY_OUT_VENDOR)/etc/cne/mwqem.conf \
     vendor/xiaomi/xiaomi14/proprietary/vendor/etc/cne/profileMwqem.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/profileMwqem.xml \
     vendor/xiaomi/xiaomi14/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile1.xml \
@@ -1490,6 +1499,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/xiaomi14/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile6.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/VZW/VZW_profile6.xml \
     vendor/xiaomi/xiaomi14/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile7.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/VZW/VZW_profile7.xml \
     vendor/xiaomi/xiaomi14/proprietary/vendor/etc/configstore/vpp.configstore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/configstore/vpp.configstore.xml \
+    vendor/xiaomi/xiaomi14/proprietary/vendor/etc/data/dsi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/dsi_config.xml \
     vendor/xiaomi/xiaomi14/proprietary/vendor/etc/data/nicm_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/nicm_config.xml \
     vendor/xiaomi/xiaomi14/proprietary/vendor/etc/default-permissions/com.qualcomm.qti.cne.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default-permissions/com.qualcomm.qti.cne.xml \
     vendor/xiaomi/xiaomi14/proprietary/vendor/etc/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
@@ -1497,6 +1507,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/xiaomi14/proprietary/vendor/etc/display/DPU9__.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU9__.xml \
     vendor/xiaomi/xiaomi14/proprietary/vendor/etc/display/advanced_sf_offsets.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/advanced_sf_offsets.xml \
     vendor/xiaomi/xiaomi14/proprietary/vendor/etc/display/thermallevel_to_fps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/thermallevel_to_fps.xml \
+    vendor/xiaomi/xiaomi14/proprietary/vendor/etc/displayconfig/display_id_4630946416293825923.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946416293825923.xml \
+    vendor/xiaomi/xiaomi14/proprietary/vendor/etc/displayconfig/display_id_4630947082089526659.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947082089526659.xml \
+    vendor/xiaomi/xiaomi14/proprietary/vendor/etc/displayconfig/display_id_4630947256895775107.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630947256895775107.xml \
     vendor/xiaomi/xiaomi14/proprietary/vendor/etc/dolby/dax-default-spatializer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default-spatializer.xml \
     vendor/xiaomi/xiaomi14/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
     vendor/xiaomi/xiaomi14/proprietary/vendor/etc/dpm_vndr/vendor.dpm.conf:$(TARGET_COPY_OUT_VENDOR)/etc/dpm_vndr/vendor.dpm.conf \
@@ -1515,7 +1528,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/xiaomi14/proprietary/vendor/etc/eva/itof/tuning_params_sensor_type_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/eva/itof/tuning_params_sensor_type_1.json \
     vendor/xiaomi/xiaomi14/proprietary/vendor/etc/gpfspath_oem_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gpfspath_oem_config.xml \
     vendor/xiaomi/xiaomi14/proprietary/vendor/etc/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf \
+    vendor/xiaomi/xiaomi14/proprietary/vendor/etc/hal_uuid_map_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/hal_uuid_map_config.xml \
+    vendor/xiaomi/xiaomi14/proprietary/vendor/etc/hal_uuid_map_houji.xml:$(TARGET_COPY_OUT_VENDOR)/etc/hal_uuid_map_houji.xml \
+    vendor/xiaomi/xiaomi14/proprietary/vendor/etc/hal_uuid_map_houjiin.xml:$(TARGET_COPY_OUT_VENDOR)/etc/hal_uuid_map_houjiin.xml \
     vendor/xiaomi/xiaomi14/proprietary/vendor/etc/init.qti.fm.sh:$(TARGET_COPY_OUT_VENDOR)/etc/init.qti.fm.sh \
+    vendor/xiaomi/xiaomi14/proprietary/vendor/etc/init/android.hardware.authsecret-service.nxp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.authsecret-service.nxp.rc \
     vendor/xiaomi/xiaomi14/proprietary/vendor/etc/init/android.hardware.bluetooth@1.1-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.1-service-qti.rc \
     vendor/xiaomi/xiaomi14/proprietary/vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc \
     vendor/xiaomi/xiaomi14/proprietary/vendor/etc/init/android.hardware.gatekeeper-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper-service-qti.rc \
@@ -1523,6 +1540,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/xiaomi14/proprietary/vendor/etc/init/android.hardware.ir-service.example.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.ir-service.example.rc \
     vendor/xiaomi/xiaomi14/proprietary/vendor/etc/init/android.hardware.secure_element-service.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element-service.qti.rc \
     vendor/xiaomi/xiaomi14/proprietary/vendor/etc/init/android.hardware.security.keymint-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service-qti.rc \
+    vendor/xiaomi/xiaomi14/proprietary/vendor/etc/init/android.hardware.security.keymint-service.strongbox-nxp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service.strongbox-nxp.rc \
+    vendor/xiaomi/xiaomi14/proprietary/vendor/etc/init/android.hardware.thermal-service.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.thermal-service.qti.rc \
     vendor/xiaomi/xiaomi14/proprietary/vendor/etc/init/cnd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cnd.rc \
     vendor/xiaomi/xiaomi14/proprietary/vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc \
     vendor/xiaomi/xiaomi14/proprietary/vendor/etc/init/dataadpl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataadpl.rc \
@@ -1540,6 +1559,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/xiaomi14/proprietary/vendor/etc/init/init.time_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.time_daemon.rc \
     vendor/xiaomi/xiaomi14/proprietary/vendor/etc/init/init.vendor.ins.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.ins.rc \
     vendor/xiaomi/xiaomi14/proprietary/vendor/etc/init/init.vendor.sensors.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.sensors.rc \
+    vendor/xiaomi/xiaomi14/proprietary/vendor/etc/init/init_thermal-engine-v2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init_thermal-engine-v2.rc \
     vendor/xiaomi/xiaomi14/proprietary/vendor/etc/init/loc-launcher.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/loc-launcher.rc \
     vendor/xiaomi/xiaomi14/proprietary/vendor/etc/init/memtrack_qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/memtrack_qti.rc \
     vendor/xiaomi/xiaomi14/proprietary/vendor/etc/init/nfc-service-nxp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nfc-service-nxp.rc \
@@ -1608,6 +1628,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/xiaomi14/proprietary/vendor/etc/models/acd/music.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/music.eai \
     vendor/xiaomi/xiaomi14/proprietary/vendor/etc/models/acd/speech.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/speech.eai \
     vendor/xiaomi/xiaomi14/proprietary/vendor/etc/nfcon.pnscr:$(TARGET_COPY_OUT_VENDOR)/etc/nfcon.pnscr \
+    vendor/xiaomi/xiaomi14/proprietary/vendor/etc/permissions/android.hardware.hardware_keystore.jc-strongbox-keymint3-nxp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.hardware_keystore.jc-strongbox-keymint3-nxp.xml \
     vendor/xiaomi/xiaomi14/proprietary/vendor/etc/permissions/android.hardware.light.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.light.xml \
     vendor/xiaomi/xiaomi14/proprietary/vendor/etc/permissions/vendor.qti.hardware.factory.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor.qti.hardware.factory.xml \
     vendor/xiaomi/xiaomi14/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
@@ -1697,6 +1718,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/xiaomi14/proprietary/vendor/etc/sn100u_pnx_pcv.pnscr:$(TARGET_COPY_OUT_VENDOR)/etc/sn100u_pnx_pcv.pnscr \
     vendor/xiaomi/xiaomi14/proprietary/vendor/etc/sn100u_pnx_sst.pnscr:$(TARGET_COPY_OUT_VENDOR)/etc/sn100u_pnx_sst.pnscr \
     vendor/xiaomi/xiaomi14/proprietary/vendor/etc/snapdragon_color_libs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/snapdragon_color_libs_config.xml \
+    vendor/xiaomi/xiaomi14/proprietary/vendor/etc/spr_cfg_xiaomi_n11u_42_02_0a_cmd_mode_dsc_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/spr_cfg_xiaomi_n11u_42_02_0a_cmd_mode_dsc_dsi_panel.xml \
+    vendor/xiaomi/xiaomi14/proprietary/vendor/etc/spr_cfg_xiaomi_n3_42_0d_0a_cmd_mode_dsc_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/spr_cfg_xiaomi_n3_42_0d_0a_cmd_mode_dsc_dsi_panel.xml \
     vendor/xiaomi/xiaomi14/proprietary/vendor/etc/ssg/ta_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/ta_config.json \
     vendor/xiaomi/xiaomi14/proprietary/vendor/etc/ssg/tz_whitelist.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/tz_whitelist.json \
     vendor/xiaomi/xiaomi14/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
@@ -1798,6 +1821,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/xiaomi14/proprietary/vendor/lib/rfsa/adsp/libtracker_6dof_skel_8450.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libtracker_6dof_skel_8450.so \
     vendor/xiaomi/xiaomi14/proprietary/vendor/lib/rfsa/adsp/nearby.napp_header:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/nearby.napp_header \
     vendor/xiaomi/xiaomi14/proprietary/vendor/lib/rfsa/adsp/nearby.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/nearby.so \
+    vendor/xiaomi/xiaomi14/proprietary/vendor/lib64/android.hardware.authsecret-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.authsecret-V1-ndk.so \
+    vendor/xiaomi/xiaomi14/proprietary/vendor/lib64/android.hardware.authsecret@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.authsecret@1.0.so \
+    vendor/xiaomi/xiaomi14/proprietary/vendor/lib64/android.hardware.contexthub-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.contexthub-V2-ndk.so \
     vendor/xiaomi/xiaomi14/proprietary/vendor/lib64/btaudio_offload_if.so:$(TARGET_COPY_OUT_VENDOR)/lib64/btaudio_offload_if.so \
     vendor/xiaomi/xiaomi14/proprietary/vendor/lib64/camera/bitmlconfig.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/bitmlconfig.bin \
     vendor/xiaomi/xiaomi14/proprietary/vendor/lib64/camera/camxfl115indices.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/camxfl115indices.bin \
@@ -2170,6 +2196,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/xiaomi14/proprietary/vendor/lib64/libisphwsetting.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libisphwsetting.so \
     vendor/xiaomi/xiaomi14/proprietary/vendor/lib64/libizat_client_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libizat_client_api.so \
     vendor/xiaomi/xiaomi14/proprietary/vendor/lib64/libizat_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libizat_core.so \
+    vendor/xiaomi/xiaomi14/proprietary/vendor/lib64/libjc_keymint_nxp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjc_keymint_nxp.so \
+    vendor/xiaomi/xiaomi14/proprietary/vendor/lib64/libjc_keymint_transport_nxp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjc_keymint_transport_nxp.so \
     vendor/xiaomi/xiaomi14/proprietary/vendor/lib64/libjnihelper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjnihelper.so \
     vendor/xiaomi/xiaomi14/proprietary/vendor/lib64/libkaraokepal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkaraokepal.so \
     vendor/xiaomi/xiaomi14/proprietary/vendor/lib64/libkeymasterdeviceutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymasterdeviceutils.so \
@@ -2673,6 +2701,8 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND \
     HotwordEnrollmentXGoogleHEXAGON_WIDEBAND \
     com.android.hotwordenrollment.common.util \
+    android.hardware.contexthub-service.qmi \
+    android.hardware.authsecret-service.nxp \
     android.hardware.gnss-aidl-service-qti \
     android.hardware.ir-service.example \
     android.hardware.radio.config \
@@ -2685,6 +2715,9 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.voice \
     android.hardware.secure_element \
     android.hardware.security.keymint-service-qti \
+    android.hardware.security.keymint3-service.strongbox-nxp \
+    android.hardware.security.sharedsecret3-service.strongbox-nxp \
+    android.hardware.thermal-service.qti \
     bluetooth_audio \
     bttpi-saidl \
     c2_manifest_vendor \
